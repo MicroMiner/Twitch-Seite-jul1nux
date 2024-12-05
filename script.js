@@ -1,7 +1,37 @@
+
+// Navigation Kategorie
+const chat = document.getElementById('katChat');
+const info = document.getElementById('katInfo');
+const gamingHistory = document.getElementById('katGamingHistory');
+
+// Kategorie Content
+const loadChat = document.getElementById('chat');
+const loadInfo = document.getElementById('info');
+const loadGamingHistory = document.getElementById('gamingHistory')
+
+chat.addEventListener('click', () => {
+  loadChat.style.opacity = '1';
+  loadInfo.style.opacity = '0';
+  loadGamingHistory.style.opacity = '0';
+});
+
+info.addEventListener('click', () => {
+  loadChat.style.opacity = '0';
+  loadInfo.style.opacity = '1';
+  loadGamingHistory.style.opacity = '0';
+});
+
+gamingHistory.addEventListener('click', () => {
+  loadChat.style.opacity = '0';
+  loadInfo.style.opacity = '0';
+  loadGamingHistory.style.opacity = '1';
+});
+
+// Twitch Player
 var options = {
-    width: 1080,
-    height: 720,
-    channel: "jul1nux",
-  };
-  var player = new Twitch.Player("jul1nux", options);
-  player.setVolume(0.5);
+  width: 1080,
+  height: 720,
+  channel: "jul1nux",
+};
+var player = new Twitch.Player("jul1nux", options);
+player.setVolume(0.5);

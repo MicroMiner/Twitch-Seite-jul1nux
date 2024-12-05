@@ -19,8 +19,9 @@ body {
 
 header {
     width: 100%;
-    height: 100px;
-    margin-bottom: 80px;
+    height: 50px;
+    margin-bottom: 100px;
+
     background-color: var(--pink);
 }
 
@@ -33,59 +34,139 @@ main {
 #twitchElemente {
     width: 100%;
     height: 723px;
-    /* background-color: aquamarine; */
 
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-end;
     gap: 100px;
+
+    background-color: aquamarine;
 }
 
 #twitchPlayer {
-    width: 1080px;
-    height: 720px;
-    background-color: red;
+    width: auto;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border: 0;
     transform: scale(1);
-
+    background-color: red;
 }
 
 #twitchPlayer iframe {
+    width: 1080px;
+    height: 720px;
+
     border: 2px solid black;
 }
 
 #twitchSidePanel {
     width: 400px;
-    height: 720px;
-    border: 2px solid black;
-    position: relative;
+    height: auto;
+
+    background-color: chocolate;
 }
 
-#twitchSidePanel-Deco {
+#twitchSidePanelNav {
+    height: 50px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    position: relative;
+
+    background-color: brown;
+}
+
+#twitchSidePanelNav ul {
+    list-style: none;
+    position: absolute;
+    bottom: -25px;
+}
+
+#twitchSidePanelNav ul li {
+    display: inline-flex;
+    text-decoration: none;
+    transition: ease-in 0.1s; 
+}
+
+#twitchSidePanelNav ul li:hover {
+    transform: translateY(-20px);
+    transition: ease-in 0.1s; 
+}
+
+#twitchSidePanelNav li img {
+    width: 40px;
+    height: 50px;
+    padding: 5px;
+
+    border-radius: 20px 20px 0 0;
+    background-color: var(--blau);
+}
+
+#twitchSidePanelDisplay {
+    width: 400px;
+    height: 720px;
+
+    position: relative;
+
+    border: 2px solid black;
+}
+
+#twitchSidePanelDisplay-Deco {
     width: 200px;
+
     position: absolute;
     top: -50px;
     left: -10px;
-    z-index: 1;
+
     transform: rotate(90deg);
+    z-index: 1;
 }
 
 #chat iframe {
     border-style: none;
     border: none;
+}
+
+#chat {
     opacity: 1;
 }
 
 #info {
     width: 100%;
     height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--blau);
+
     position: absolute;
     top: 0;
     left: 0;
+
     opacity: 0;
+    background-color: var(--blau);
+}
+
+#gamingHistory {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    background-color: var(--blau);
 }
 
