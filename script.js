@@ -14,9 +14,9 @@ const infoActive = document.querySelector('img[alt="info"]')
 const gamingHistoryActive = document.querySelector('img[alt="gamingHistory"]')
 
 chat.addEventListener('click', () => {
-  loadChat.style.opacity = '1';
-  loadInfo.style.opacity = '0';
-  loadGamingHistory.style.opacity = '0';
+  loadChat.style.display = 'flex';
+  loadInfo.style.display = 'none';
+  loadGamingHistory.style.display = 'none';
 
   chatActive.classList.add('active');
   infoActive.classList.remove('active');
@@ -24,9 +24,9 @@ chat.addEventListener('click', () => {
 });
 
 info.addEventListener('click', () => {
-  loadChat.style.opacity = '0';
-  loadInfo.style.opacity = '1';
-  loadGamingHistory.style.opacity = '0';
+  loadChat.style.display = 'none';
+  loadInfo.style.display = 'flex';
+  loadGamingHistory.style.display = 'none';
 
   chatActive.classList.remove('active');
   infoActive.classList.add('active');
@@ -34,9 +34,9 @@ info.addEventListener('click', () => {
 });
 
 gamingHistory.addEventListener('click', () => {
-  loadChat.style.opacity = '0';
-  loadInfo.style.opacity = '0';
-  loadGamingHistory.style.opacity = '1';
+  loadChat.style.display = 'none';
+  loadInfo.style.display = 'none';
+  loadGamingHistory.style.display = 'flex';
 
   chatActive.classList.remove('active');
   infoActive.classList.remove('active');
