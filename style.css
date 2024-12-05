@@ -142,6 +142,7 @@ main {
     top: -50px;
     left: -10px;
 
+    pointer-events: none;
     transform: rotate(90deg);
     z-index: 1;
 }
