@@ -26,13 +26,31 @@ header {
 main {
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+#twitchElemente {
+    width: 100%;
+    height: auto;
+    background-color: aquamarine;
+
+    display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 #twitchPlayer {
-    width: 100%;
+    width: 1080px;
     height: 720px;
     background-color: red;
     border: 0;
+    transform: scale(1);
+    border: 2px solid black;
+}
+
+#twitchChat {
+    width: auto;
+    height: auto;
+    border: 2px solid black;
 }
 
