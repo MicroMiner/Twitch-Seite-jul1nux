@@ -1,3 +1,5 @@
+
+/* -------------- Allgemeine Einstellung -------------- */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,8 @@
     --blau: #c0ddff;
 }
 
+
+/* -------------- Grundstruktur -------------- */
 body {
     background-color: var(--dunkelpink);
 }
@@ -31,6 +35,8 @@ main {
     flex-direction: column;
 }
 
+
+/* -------------- Twitch Elemente -------------- */
 #twitchElemente {
     width: 100%;
     height: 723px;
@@ -41,9 +47,10 @@ main {
     align-items: flex-end;
     gap: 100px;
 
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
+/* Twitch Player */
 #twitchPlayer {
     width: auto;
     height: auto;
@@ -54,7 +61,7 @@ main {
 
     border: 0;
     transform: scale(1);
-    background-color: red;
+    /* background-color: red; */
 }
 
 #twitchPlayer iframe {
@@ -64,13 +71,15 @@ main {
     border: 2px solid black;
 }
 
+/* Twitch Side Panel */
 #twitchSidePanel {
     width: 400px;
     height: auto;
 
-    background-color: chocolate;
+    /* background-color: chocolate; */
 }
 
+/* Twitch Side Panel Navigation */
 #twitchSidePanelNav {
     height: 50px;
     width: 400px;
@@ -80,7 +89,7 @@ main {
 
     position: relative;
 
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 #twitchSidePanelNav ul {
@@ -95,20 +104,28 @@ main {
     transition: ease-in 0.1s; 
 }
 
-#twitchSidePanelNav ul li:hover {
-    transform: translateY(-20px);
-    transition: ease-in 0.1s; 
-}
-
-#twitchSidePanelNav li img {
+#twitchSidePanelNav ul li img {
     width: 40px;
     height: 50px;
     padding: 5px;
 
+    transition: ease-in 0.1s;
     border-radius: 20px 20px 0 0;
+    background-color: color-mix(in srgb, var(--blau) 70%, black 30%);
+}
+
+#twitchSidePanelNav ul li img:hover {
+    transform: translateY(-20px);
+    transition: ease-out 0.1s;
     background-color: var(--blau);
 }
 
+#twitchSidePanelNav ul li img.active {
+    transform: translateY(-20px);
+    background-color: var(--blau);
+}
+
+/* Twitch Side Panel Display*/
 #twitchSidePanelDisplay {
     width: 400px;
     height: 720px;
@@ -129,6 +146,7 @@ main {
     z-index: 1;
 }
 
+/* Twitch Side Panel Content */
 #chat iframe {
     border-style: none;
     border: none;
