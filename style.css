@@ -35,6 +35,10 @@ main {
     flex-direction: column;
 }
 
+p {
+    font-size: 18px;
+}
+
 
 /* -------------- Twitch Elemente -------------- */
 #twitchElemente {
@@ -135,6 +139,18 @@ main {
     border: 2px solid black;
 }
 
+#twitchSidePanelDisplay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 10px 0 black;
+    pointer-events: none;
+    z-index: 2;
+}
+
 #twitchSidePanelDisplay-Deco {
     width: 200px;
 
@@ -144,7 +160,7 @@ main {
 
     pointer-events: none;
     transform: rotate(90deg);
-    z-index: 1;
+    z-index: 10;
 }
 
 /* Twitch Side Panel Content */
@@ -158,18 +174,81 @@ main {
 }
 
 #info {
-    width: 100%;
+    width: 400px;
     height: 100%;
 
     display: none;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 700px;
+    flex-direction: column;
 
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
+    overflow-y: scroll;
 
-    background-color: var(--blau);
+    background-color: color-mix(in srgb, var(--blau) 70%, white 30%);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#portrait {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: chartreuse; */
+}
+
+#info img#portraitSource {
+    width: 180px;
+
+    border-radius: 50%;
+}
+
+#userBio {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    /* background-color: #ffc0cb; */
+}
+
+#userBioPara {
+    width: 90%;
+    height: 320px;
+    /* background-color: #bc2cd8; */
+}
+
+#userInfo {
+    width: 90%;
+    height: 350px;
+    /* background-color: green; */
+}
+
+#uList li {
+
+    list-style: none;
+    padding: 5px 10px;
+
+    display: flex;
+    align-items: center;     
+    text-align: center; 
+}
+
+.liIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 #gamingHistory {

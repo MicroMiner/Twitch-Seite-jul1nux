@@ -25,7 +25,7 @@ chat.addEventListener('click', () => {
 
 info.addEventListener('click', () => {
   loadChat.style.display = 'none';
-  loadInfo.style.display = 'flex';
+  loadInfo.style.display = 'grid';
   loadGamingHistory.style.display = 'none';
 
   chatActive.classList.remove('active');
