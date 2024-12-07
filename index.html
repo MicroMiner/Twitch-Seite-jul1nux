@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="chrome-extension://ajopnjidmegmdimjlfnijceegpefgped/betterttv.css?v=7.6.9">
     <title>Twitch jul1nux</title>
 </head>
 <body>
@@ -48,7 +47,7 @@
 
                     <!-- Chat -->
                     <div id="chat">
-                        <iframe class=".bttv-rs-theme-dark" src="https://www.twitch.tv/embed/jul1nux/chat?parent=microminer.github.io&theme=dark" height="720" width="400"></iframe>
+                        <iframe src="https://www.twitch.tv/embed/jul1nux/chat?parent=microminer.github.io" height="720" width="400"></iframe>
                     </div>
 
                     <!-- Info -->
@@ -119,7 +118,18 @@
 
                     <!-- Gaming History -->
                     <div id="gamingHistory">
-                        <p>Gaming History</p>
+
+                        <div class="jahrDiv">
+                            <p>2023</p>
+                            <img class="jahrDivIcon" src="img/svg/arrow-side-right.svg" alt="arrow-side-right">
+                        </div>
+                        <div class="gameList">
+                            <ul class="gameListUl">
+                                <li>Minecraft</li>
+                                <li>Minecraft</li>
+                            </ul>
+                        </div>
+                    
                     </div>
                 </div>
             </div>
@@ -133,8 +143,8 @@
 
 
     <!-- Load extend js file -->
-    <script src="script.js"></script>
-    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+    <script src="script.js" defer></script>
+    <script src= "https://player.twitch.tv/js/embed/v1.js" defer></script>
   
 </body>
 </html>
