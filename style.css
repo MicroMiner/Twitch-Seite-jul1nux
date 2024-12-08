@@ -188,11 +188,14 @@ p {
 #chat {
     display: flex;
     background-color: var(--pink);
-    z-index: 0;
 }
 
 
 /* Info */
+::-webkit-scrollbar {
+    display: none;
+}
+
 #info {
     width: 400px;
     height: 100%;
@@ -206,12 +209,8 @@ p {
     top: 0;
     left: 0;
 
+    overflow-y: scroll;
     background-color: var(--pink);
-    z-index: 0;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 #portrait {
