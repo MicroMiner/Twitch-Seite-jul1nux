@@ -27,6 +27,7 @@ header {
     margin-bottom: 100px;
 
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
 
@@ -377,7 +378,7 @@ p {
 }
 
 #linksBox {
-    padding: 15px;
+    padding: 15px 30px;
 
     display: flex;
     flex-direction: row;
@@ -391,4 +392,35 @@ p {
 #linksBox img {
     width: 40px;
     height: auto;
+}
+
+#titelName {
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+
+    position: relative;
+    top: 30px;
+    right: 250px;
+
+    /* background-color: brown; */
+}
+
+@font-face {
+    font-family: 'Misses';
+    src: local('font-Misses'),
+    url('font/misses/Misses.otf') format('otf');
+}
+
+#t-name {
+    font-size: 120px;
+    font-family: 'Misses';
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0 3px 5px black;
+    color: white;
+    text-shadow: 0px 5px 0 rgba(0, 0, 0, 0.25);
 }
