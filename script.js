@@ -3,12 +3,12 @@ import { Games2023_24, Games2024_25, Games2025_26 } from './gamelist.js';
 document.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM complet load');
 
-  // Navigation Kategorie
+  //------------------- Navigation Kategorie
   const chat = document.getElementById('katChat');
   const info = document.getElementById('katInfo');
   const gamingHistory = document.getElementById('katGamingHistory');
 
-  // Kategorie Content
+  //------------------- Kategorie Content -------------------
   const loadChat = document.getElementById('chat');
   const loadInfo = document.getElementById('info');
   const loadGamingHistory = document.getElementById('gamingHistory');
@@ -47,7 +47,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     gamingHistoryActive.classList.add('active');
   });
 
-  // Game History
+
+
+  //------------------- Game History -------------------
   const jahrDivs = document.querySelectorAll('.jahrDiv');
   console.log('Gefundene Elemente: ', jahrDivs);
   if (jahrDivs.length === 0) {
@@ -104,8 +106,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 
+  //------------------- Twitch Player Controll -------------------
+  const vPlay = document.getElementById('videoPlay');
+  const vPause = document.getElementById('videoPause');
 
-  // Twitch Player
+
+  vPlay.addEventListener('click', () => {
+    console.log('Du hast Play gedrückt');
+  })
+
+  vPause.addEventListener('click', () => {
+    console.log('Du hast Pause gedrückt');
+  })
+
+  //------------------- Twitch Player -------------------
   var options = {
     width: 1080,
     height: 720,
@@ -114,15 +128,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   var player = new Twitch.Player("jul1nux", options);
   player.setVolume(0.5);
 
-  const vPlay = document.getElementById('videoPlay');
-  const vPause = document.getElementById('videoPause');
 
-  vPlay.addEventListener('click', () => {
-    player.play();
-  })
-
-  vPause.addEventListener('click', () => {
-    player.pause();
-  })
 
 })

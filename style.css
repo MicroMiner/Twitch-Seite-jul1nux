@@ -83,6 +83,8 @@ footer {
     /* background-color: aquamarine; */
 }
 
+/* -------------- Twitch Player & Controll -------------- */
+
 /* Twitch Player & Controll Wrapper */
 #twitchPlayerWrapper {
     width: 1080px;
@@ -165,7 +167,7 @@ footer {
 
 
 
-/* Twitch Side Panel */
+/* -------------- Twitch Side Panel -------------- */
 #twitchSidePanel {
     width: 400px;
     height: auto;
@@ -177,7 +179,7 @@ footer {
     /* background-color: chocolate; */
 }
 
-/* Twitch Side Panel Navigation */
+/* Navigation */
 #twitchSidePanelNav {
     height: 80px;
     width: 400px;
@@ -223,7 +225,7 @@ footer {
     background-color: var(--blau);
 }
 
-/* Twitch Side Panel Display Wrapper for shadow */
+/* Display Wrapper for Shadow */
 #twitchSidePanelDisplayWrapper {
     width: 400px;
     height: 720px;
@@ -243,7 +245,7 @@ footer {
     z-index: 1;
 }
 
-/* Twitch Side Panel Display*/
+/* Display*/
 #twitchSidePanelDisplay {
     width: 400px;
     height: 720px;
@@ -266,7 +268,7 @@ footer {
     z-index: 10;
 }
 
-/* Twitch Side Panel Content */
+/* -------------- Twitch Side Panel Content -------------- */
 
 /* Chat */
 #chat iframe {
