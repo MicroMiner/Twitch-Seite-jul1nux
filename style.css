@@ -18,30 +18,55 @@
 
 /* -------------- Grundstruktur -------------- */
 body {
-    background-color: var(--dunkelpink);
+    /* background-color: var(--dunkelpink); */
+    background-image: url(/img/background-2.png);
+    background-repeat: repeat;
+    background-size: 280px;
+}
+
+#bodyCover {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(179, 134, 147, 0.5);
 }
 
 header {
     width: 100%;
     height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 
-    background-color: var(--pink);
+    box-shadow: 2px 0 10px 0 black;
+    background: rgb(179,134,147);
+    background: linear-gradient(0deg, rgba(179,134,147,1) 8%, rgba(255,192,203,1) 60%, rgba(247,207,214,1) 85%);
 }
 
 main {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    /* background-color: brown; */
 }
 
 p {
     font-size: 18px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    /* background-color: var(--pink); */
+
+    display: flex;
+
+
+    position: fixed;
+    bottom: 0;
 }
 
 
@@ -79,6 +104,62 @@ p {
 
     border: 2px solid black;
 }
+
+#twitchPlayerWrapper {
+    width: auto;
+    height: auto;
+    background-color: aqua;
+}
+
+/* Twtich Videoplayer Controll */
+#twitchPlayerControll {
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    gap: 250px;
+    /* background-color: brown; */
+
+    position: relative;
+}
+
+#twitchPlayerControll img {
+    width: 40px;
+}
+
+#playPause, #soundControll {
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    background-color: var(--blau);
+}
+
+#playPause {
+    height: 100%;
+
+    gap: 35px;
+
+    top: 0;
+    left: 100px;
+}
+
+#soundControll {
+    width: auto;
+    height: 100%;
+
+    gap: 20px;
+
+    right: 80px;
+}
+
+
 
 /* Twitch Side Panel */
 #twitchSidePanel {
@@ -360,6 +441,8 @@ p {
     background-color: var(--dunkelpink);
 }
 
+
+/* Diverse Links im Header */
 #linksBoxContainer {
     width: auto;
     height: 100%;
@@ -393,6 +476,7 @@ p {
     height: auto;
 }
 
+/* Titelname im Header */
 #titelName {
     width: auto;
     height: 100%;
@@ -423,3 +507,4 @@ p {
     color: white;
     text-shadow: 0px 5px 0 rgba(0, 0, 0, 0.25);
 }
+

@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 
+
   // Twitch Player
   var options = {
     width: 1080,
@@ -112,5 +113,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
   };
   var player = new Twitch.Player("jul1nux", options);
   player.setVolume(0.5);
+
+  const vPlay = document.getElementById('videoPlay');
+  const vPause = document.getElementById('videoPause');
+
+  vPlay.addEventListener('click', () => {
+    player.play();
+  })
+
+  vPause.addEventListener('click', () => {
+    player.pause();
+  })
 
 })
