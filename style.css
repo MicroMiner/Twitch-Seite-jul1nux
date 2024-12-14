@@ -72,16 +72,26 @@ footer {
 
 /* -------------- Twitch Elemente -------------- */
 #twitchElemente {
-    width: 100%;
+    width: 75%;
     height: 723px;
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 100px;
+
+    position: relative;
 
     /* background-color: aquamarine; */
+}
+
+/* Twitch Player & Controll Wrapper */
+#twitchPlayerWrapper {
+    width: 1080px;
+    height: auto;
+    /* background-color: aqua; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Twitch Player */
@@ -105,12 +115,6 @@ footer {
     border: 2px solid black;
 }
 
-#twitchPlayerWrapper {
-    width: auto;
-    height: auto;
-    background-color: aqua;
-}
-
 /* Twtich Videoplayer Controll */
 #twitchPlayerControll {
     height: 80px;
@@ -118,7 +122,7 @@ footer {
 
     display: flex;
     gap: 250px;
-    /* background-color: brown; */
+    /* background-color: green; */
 
     position: relative;
 }
@@ -166,12 +170,16 @@ footer {
     width: 400px;
     height: auto;
 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
     /* background-color: chocolate; */
 }
 
 /* Twitch Side Panel Navigation */
 #twitchSidePanelNav {
-    height: 50px;
+    height: 80px;
     width: 400px;
 
     display: flex;
@@ -179,7 +187,7 @@ footer {
 
     position: relative;
 
-    /* background-color: brown; */
+    /* background-color: goldenrod; */
 }
 
 #twitchSidePanelNav ul {
