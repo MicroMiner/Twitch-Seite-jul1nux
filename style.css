@@ -19,7 +19,7 @@
 /* -------------- Grundstruktur -------------- */
 body {
     /* background-color: var(--dunkelpink); */
-    background-image: url(/img/background-2.png);
+    background-image: url(img/background-2.png);
     background-repeat: repeat;
     background-size: 280px;
 }
@@ -46,11 +46,13 @@ header {
 }
 
 main {
+    width: 100vw;
+
     display: flex;
     align-items: center;
     flex-direction: column;
 
-    /* background-color: brown; */
+    background-color: brown;
 }
 
 p {
@@ -72,49 +74,39 @@ footer {
 
 /* -------------- Twitch Elemente -------------- */
 #twitchElemente {
-    width: 75%;
-    height: 723px;
+    width: 100%;
+    height: auto;
 
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 50px;
 
-    position: relative;
+    transform: scale(0.65);
 
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
 }
 
 /* -------------- Twitch Player & Controll -------------- */
 
 /* Twitch Player & Controll Wrapper */
 #twitchPlayerWrapper {
-    width: 1080px;
+    width: auto;
     height: auto;
-    /* background-color: aqua; */
-
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-color: aqua;
 }
 
 /* Twitch Player */
 #twitchPlayer {
-    width: auto;
-    height: auto;
+    width: 1100px;
+    aspect-ratio: 16/9;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     border: 0;
-    transform: scale(1);
     background-color: var(--pink);
-}
-
-#twitchPlayer iframe {
-    width: 1080px;
-    height: 720px;
-
-    border: 2px solid black;
 }
 
 /* Twtich Videoplayer Controll */
@@ -124,7 +116,7 @@ footer {
 
     display: flex;
     gap: 250px;
-    /* background-color: green; */
+    background-color: green;
 
     position: relative;
 }
@@ -170,13 +162,12 @@ footer {
 /* -------------- Twitch Side Panel -------------- */
 #twitchSidePanel {
     width: 400px;
-    height: auto;
+    height: 619px;
 
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    display: flex;
+    flex-direction: column;
 
-    /* background-color: chocolate; */
+    background-color: chocolate;
 }
 
 /* Navigation */
@@ -228,7 +219,7 @@ footer {
 /* Display Wrapper for Shadow */
 #twitchSidePanelDisplayWrapper {
     width: 400px;
-    height: 720px;
+    height: 619px;
 
     position: relative;
 }
@@ -248,7 +239,7 @@ footer {
 /* Display*/
 #twitchSidePanelDisplay {
     width: 400px;
-    height: 720px;
+    height: 619px;
 
     position: relative;
 
@@ -517,4 +508,3 @@ footer {
     color: white;
     text-shadow: 0px 5px 0 rgba(0, 0, 0, 0.25);
 }
-
