@@ -18,22 +18,32 @@
 
 /* -------------- Grundstruktur -------------- */
 body {
+    margin-bottom: 100px;
+
     /* background-color: var(--dunkelpink); */
     background-image: url(img/background-2.png);
     background-repeat: repeat;
     background-size: 280px;
+
+    position: relative;
 }
 
 #bodyCover {
     width: 100vw;
     height: 100vh;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: scroll;
     background-color: rgba(179, 134, 147, 0.5);
 }
 
 header {
     width: 100%;
     height: 100px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 
     display: flex;
     justify-content: center;
@@ -46,45 +56,36 @@ header {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
+    height: auto;
 
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 
-    background-color: brown;
+    position: relative;
+
+    /* background-color: brown; */
 }
 
 p {
     font-size: 18px;
 }
 
-footer {
-    width: 100%;
-    height: 100px;
-    /* background-color: var(--pink); */
-
-    display: flex;
-
-
-    position: fixed;
-    bottom: 0;
-}
-
-
 /* -------------- Twitch Elemente -------------- */
 #twitchElemente {
     width: auto;
-    height: auto;
+    height: calc(650px + 120px);
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 50px;
 
-    transform: scale(0.65);
+    transform: scale(1);
 
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 /* -------------- Twitch Player & Controll -------------- */
@@ -92,13 +93,19 @@ footer {
 /* Twitch Player & Controll Wrapper */
 #twitchPlayerWrapper {
     width: auto;
-    height: auto;
-    background-color: aqua;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+
+
 }
 
 /* Twitch Player */
 #twitchPlayer {
-    /* width: 1100px; */
+    /* width: 1000px; */
     aspect-ratio: 16/9;
 
     display: flex;
@@ -111,12 +118,12 @@ footer {
 
 /* Twtich Videoplayer Controll */
 #twitchPlayerControll {
-    height: 80px;
+    height: 60px;
     width: 100%;
 
     display: flex;
     gap: 250px;
-    background-color: green;
+    /* background-color: green; */
 
     position: relative;
 }
@@ -135,7 +142,7 @@ footer {
     position: absolute;
 
     border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
     background-color: var(--blau);
 }
 
@@ -167,12 +174,12 @@ footer {
     display: flex;
     flex-direction: column;
 
-    background-color: chocolate;
+    /* background-color: chocolate; */
 }
 
 /* Navigation */
 #twitchSidePanelNav {
-    height: 80px;
+    height: 60px;
     /* width: 600px; */
 
     display: flex;
@@ -214,12 +221,17 @@ footer {
 #twitchSidePanelNav ul li img.active {
     transform: translateY(-20px);
     background-color: var(--blau);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* Display Wrapper for Shadow */
 #twitchSidePanelDisplayWrapper {
     /* width: 400px;
     height: 619px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     position: relative;
 }
@@ -230,7 +242,7 @@ footer {
     top: 0;
     left: 0;
     right: -2px;
-    bottom: -2px;
+    bottom: 0px;
     pointer-events: none;
     box-shadow: inset 0 0 10px 0 black;
     z-index: 1;
@@ -248,10 +260,10 @@ footer {
 }
 
 #twitchSidePanelDisplay-Deco {
-    width: 200px;
+    /* width: 200px; */
 
     position: absolute;
-    top: -50px;
+    /* top: -50px; */
     left: -10px;
 
     pointer-events: none;
