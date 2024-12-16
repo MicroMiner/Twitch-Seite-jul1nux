@@ -74,7 +74,7 @@ footer {
 
 /* -------------- Twitch Elemente -------------- */
 #twitchElemente {
-    width: 100%;
+    width: auto;
     height: auto;
 
     display: flex;
@@ -98,7 +98,7 @@ footer {
 
 /* Twitch Player */
 #twitchPlayer {
-    width: 1100px;
+    /* width: 1100px; */
     aspect-ratio: 16/9;
 
     display: flex;
@@ -162,7 +162,7 @@ footer {
 /* -------------- Twitch Side Panel -------------- */
 #twitchSidePanel {
     width: 400px;
-    height: 619px;
+    /* height: 619px; */
 
     display: flex;
     flex-direction: column;
@@ -173,7 +173,7 @@ footer {
 /* Navigation */
 #twitchSidePanelNav {
     height: 80px;
-    width: 400px;
+    /* width: 600px; */
 
     display: flex;
     flex-direction: row-reverse;
@@ -218,8 +218,8 @@ footer {
 
 /* Display Wrapper for Shadow */
 #twitchSidePanelDisplayWrapper {
-    width: 400px;
-    height: 619px;
+    /* width: 400px;
+    height: 619px; */
 
     position: relative;
 }
@@ -238,8 +238,8 @@ footer {
 
 /* Display*/
 #twitchSidePanelDisplay {
-    width: 400px;
-    height: 619px;
+    /* width: 400px;
+    height: 619px; */
 
     position: relative;
 
