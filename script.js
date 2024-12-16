@@ -106,18 +106,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 
-  //------------------- Twitch Player Controll -------------------
-  const vPlay = document.getElementById('videoPlay');
-  const vPause = document.getElementById('videoPause');
-
-
-  vPlay.addEventListener('click', () => {
-    console.log('Du hast Play gedrückt');
-  })
-
-  vPause.addEventListener('click', () => {
-    console.log('Du hast Pause gedrückt');
-  })
 
   //------------------- Twitch Player -------------------
   var options = {
@@ -127,6 +115,35 @@ document.addEventListener('DOMContentLoaded', (event) => {
   };
   var player = new Twitch.Player("jul1nux", options);
   player.setVolume(0.5);
+  console.log('Player ');
+
+  player.addEventListener(Twtich.Player.READY, () => {
+    console.log('videoPlayer ist bereit');
+
+    const videoPlay = document.getElementById('videoPlay');
+
+    videoPlay.addEventListener('click', () => {
+    console.log('Element mit der ID "videoPlay" wurde gefunden');
+    player.Play();
+    console.log('Stream wird gestartet');
+    });
+
+    const videoPause = document.getElementById('videoPause');
+
+    videoPause.addEventListener('click', () => {
+      console.log('Element mit der ID "videoPause" wurde gefunden');
+      player.Pause();
+      console.log('Stream wird gestartet');
+      });
+
+  });
+
+  
+  //------------------- Twitch Player Controll -------------------
+
+  
+
+
 
 
 })
