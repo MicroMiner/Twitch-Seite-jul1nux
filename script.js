@@ -121,11 +121,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   //------------------- Twitch Player -------------------
   var options = {
-    width: 1080,
-    height: 720,
+    width: '100%',
+    height: '100%',
     channel: "jul1nux",
   };
   var player = new Twitch.Player("jul1nux", options);
   player.setVolume(0.5);
+
 
 })
