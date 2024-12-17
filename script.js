@@ -115,7 +115,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   };
   var player = new Twitch.Player("jul1nux", options);
   player.setVolume(0.5);
-  console.log('Player ');
 
   player.addEventListener(Twtich.Player.READY, () => {
     console.log('videoPlayer ist bereit');

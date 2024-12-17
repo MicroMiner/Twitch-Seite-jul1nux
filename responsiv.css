@@ -3,18 +3,28 @@
 
 @media only screen and (min-width: 1000px) {
     
+    #twitchElemente {
+        height: auto;
+        gap: 50px;
+    }
 
     /* ---- Twitch Player ---- */
     #twitchPlayer {
         width: 1156px;
     }
 
-
-
     /* ---- Twitch Player ---- */
     #twitchSidePanel {
     width: 400px;
-    height: auto;
+    height: 619px;
+    }
+
+    #twitchPlayerControll {
+        gap: 250px;
+    }
+
+    #twitchPlayerControll img {
+        width: 40px;
     }
     
     /* ---- Twitch Side Panel Navigation ---- */
@@ -46,6 +56,7 @@
         top: -50px;
     }
 
+    /* ---- Chat ---- */
     #chat {
         width: 400px;
         height: 650px;
@@ -59,52 +70,73 @@
 
 /* ------------------------ bis zu 1000px ---------------------------- */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
+
+    #twitchElemente {
+        height: auto;
+        gap: 30px;
+    }
     
     /* ---- Twitch Player ---- */
     #twitchPlayer {
-        width: 1000px;
+        width: 700px;
+    }
+
+    /* ---- Sound Controll ---- */
+    #twitchPlayerControll {
+        height: 50px;
+        gap: 20px;
+    }
+
+    #twitchPlayerControll img {
+        width: 30px;
     }
 
     /* ---- Twitch Side Panel ---- */
     #twitchSidePanel {
-    width: 400px;
-    height: 619px;
+    width: 250px;
+    height: 394px;
     }
 
     /* ---- Twitch Side Panel Navigation ---- */
     #twtichSidePanelNav {
-        width: 400px;
+        width: 250px;
     }
 
     #twitchSidePanelNav ul li img {
-        width: 50px;
-        height: 70px;
+        width: 30px;
+        height: 40px;
 
         border-radius: 20px 20px 0 0;
     }
 
     /* ---- Twitch Side Panel Display Wrapper ---- */
     #twitchSidePanelDisplayWrapper {
-        width: 400px;
-        height: 619px;
+        width: 250px;
+        height: 394px;
     }
 
     /* ---- Twitch Side Panel Display ---- */
     #twitchSidePanelDisplay {
-        width: 400px;
-        height: 619px;
+        width: 250px;
+        height: 394px;
     }
 
     #twitchSidePanelDisplay-Deco {
-        width: 200px;
-        top: -50px;
+        width: 120px;
+        top: -35px;
         left: -10px;
+    }
+
+    /* ---- Chat ---- */
+    #chat {
+        width: 250px;
+        height: 100%;
     }
 
     /* ---- Info ---- */
     #info {
-        width: 400px;
+        width: 250px;
     }
 }
     

@@ -43,7 +43,7 @@ body {
 header {
     width: 100%;
     height: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
     display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@ p {
 /* -------------- Twitch Elemente -------------- */
 #twitchElemente {
     width: auto;
-    height: calc(650px + 120px);
+    /* height: responsiv; */
 
     display: flex;
     flex-direction: row;
@@ -105,7 +105,7 @@ p {
 
 /* Twitch Player */
 #twitchPlayer {
-    /* width: 1000px; */
+    /* width: responsiv; */
     aspect-ratio: 16/9;
 
     display: flex;
@@ -122,14 +122,14 @@ p {
     width: 100%;
 
     display: flex;
-    gap: 250px;
+    /* gap: 250px; */
     /* background-color: green; */
 
     position: relative;
 }
 
 #twitchPlayerControll img {
-    width: 40px;
+    /* width: responsiv; */
 }
 
 #playPause, #soundControll {
@@ -169,7 +169,7 @@ p {
 /* -------------- Twitch Side Panel -------------- */
 #twitchSidePanel {
     width: 400px;
-    /* height: 619px; */
+    /* height: responsiv; */
 
     display: flex;
     flex-direction: column;
@@ -180,14 +180,14 @@ p {
 /* Navigation */
 #twitchSidePanelNav {
     height: 60px;
-    /* width: 600px; */
+    /* width: responsiv; */
 
     display: flex;
     flex-direction: row-reverse;
 
     position: relative;
 
-    /* background-color: goldenrod; */
+    background-color: goldenrod;
 }
 
 #twitchSidePanelNav ul {
@@ -203,8 +203,8 @@ p {
 }
 
 #twitchSidePanelNav ul li img {
-    width: 40px;
-    height: 50px;
+    /* width: responsiv; */
+    /* height: responsiv; */
     padding: 5px;
 
     transition: ease-in 0.1s;
@@ -226,8 +226,8 @@ p {
 
 /* Display Wrapper for Shadow */
 #twitchSidePanelDisplayWrapper {
-    /* width: 400px;
-    height: 619px; */
+    /* width: responsiv; */
+    /* height: responsiv; */
 
     display: flex;
     flex-direction: column;
@@ -250,8 +250,8 @@ p {
 
 /* Display*/
 #twitchSidePanelDisplay {
-    /* width: 400px;
-    height: 619px; */
+    /* width: responsiv; */
+    /* height: responsiv; */
 
     position: relative;
 
@@ -260,10 +260,10 @@ p {
 }
 
 #twitchSidePanelDisplay-Deco {
-    /* width: 200px; */
+    /* width: responsiv; */
 
     position: absolute;
-    /* top: -50px; */
+    /* top: responsiv; */
     left: -10px;
 
     pointer-events: none;
@@ -280,6 +280,9 @@ p {
 }
 
 #chat {
+    /* width: responsiv; */
+    /* height: responsiv; */
+
     display: flex;
     background-color: var(--pink);
 }
@@ -291,7 +294,7 @@ p {
 }
 
 #info {
-    width: 400px;
+    /* width: responsiv; */
     height: 100%;
 
     display: none;
